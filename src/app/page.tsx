@@ -1,4 +1,3 @@
-"use client"
 import GoogleReview from "@/components/GoogleReview";
 import Map from "@/components/Map";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
