@@ -25,7 +25,7 @@ const CarouselComponent = () => {
       <CarouselContent>
         {banners.map((banner, index) => (
           <CarouselItem key={index}>
-            <img src={banner.img} alt={`banner-${index}`} className="" />
+            <img src={banner.img} alt={`banner-${index}`} />
           </CarouselItem>
         ))}
       </CarouselContent>
