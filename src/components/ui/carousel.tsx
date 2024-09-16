@@ -58,6 +58,17 @@ const Carousel = React.forwardRef<
     },
     ref
   ) => {
+
+    const [isClient, setIsClient] = React.useState(false);
+
+    React.useEffect(() => {
+      setIsClient(true);  // Mark as client-side rendering
+    }, []);
+
+    if (!isClient) {
+      return null;  // Skip rendering during SSR
+    }
+
     const [carouselRef, api] = useEmblaCarousel(
       {
         ...opts,
