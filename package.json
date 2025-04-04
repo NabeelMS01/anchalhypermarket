@@ -9,8 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^2.0.4",
-    "@kinde-oss/kinde-auth-nextjs": "^2.3.6",
+    "@headlessui/react": "^2.0.4", 
     "@prisma/client": "^5.18.0",
     "@radix-ui/react-aspect-ratio": "^1.0.3",
     "@radix-ui/react-dialog": "^1.0.5",
