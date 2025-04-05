@@ -1,10 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
   // Disable the pages directory
   pageExtensions: ['tsx', 'ts', 'jsx', 'js'],
+  // Ensure proper error handling
+  reactStrictMode: true,
 };
 
 export default nextConfig;
