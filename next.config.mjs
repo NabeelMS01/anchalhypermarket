@@ -8,6 +8,17 @@ const nextConfig = {
   experimental: {
     missingSuspenseWithCSRError: false,
   },
+  // Disable pages directory
+  useFileSystemPublicRoutes: false,
+  // Configure 404 handling
+  async rewrites() {
+    return [
+      {
+        source: '/:path*',
+        destination: '/:path*',
+      },
+    ];
+  },
 };
 
 export default nextConfig;
