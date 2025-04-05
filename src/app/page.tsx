@@ -1,15 +1,16 @@
+"use client"
 import GoogleReview from "@/components/GoogleReview";
 import Map from "@/components/Map";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Product from "@/components/Product";
 import dynamic from "next/dynamic";
 import googleReview from "../lib/reviews.json";
-import Footer from "@/components/Footer";
+// import Footer from "@/components/Footer";
 import Image from "next/image";
 
 // Dynamically import the client component
 const CarouselComponent = dynamic(() => import("../components/Courousel"), {
-  ssr: false,
+  
 });
 
 export default function Home() {  
