@@ -10,23 +10,20 @@ const googleFont = Roboto_Flex({ subsets: ["latin"] });
 
 export const metadata: Metadata = constructMetaData();
 
-
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-    <body className={googleFont.className}>
-      <Providers>
-        <Navbar />
-
-        <main>{children}</main> 
-
-        <Footer />
-      </Providers>
-    </body>
-  </html>
+    <html lang="en" suppressHydrationWarning>
+      <body className={googleFont.className}>
+        <Providers>
+          <Navbar />
+          <main className="min-h-screen">{children}</main>
+          <Footer />
+        </Providers>
+      </body>
+    </html>
   );
 }
