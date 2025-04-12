@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+   <>
       <head />
       <body className={googleFont.className}>
         <Providers>
@@ -24,7 +24,7 @@ export default function RootLayout({
           <main className="min-h-screen">{children}</main>
           <Footer />
         </Providers>
-      </body>
-    </html>
+      </body> 
+      </>
   );
 }
