@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Roboto_Flex } from "next/font/google";
+import { Inter, Roboto_Flex } from "next/font/google";
 import "./globals.css";
 import Providers from "@/components/Providers";
 import Navbar from "@/components/Navbar";
@@ -16,15 +16,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-   <>
-      <head />
+    <html lang="en" suppressHydrationWarning>
       <body className={googleFont.className}>
         <Providers>
           <Navbar />
           <main className="min-h-screen">{children}</main>
           <Footer />
         </Providers>
-      </body> 
-      </>
+      </body>
+    </html>
   );
 }
