@@ -1,12 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = { 
-  async rewrites() {
-    return [
-      {
-        source: '/:path*',
-        destination: '/:path*',
-      },
-    ];
+const nextConfig = {
+  output: 'export',
+  images: {
+    unoptimized: true,
   },
 };
 
