@@ -18,16 +18,6 @@ import { BUSINESS } from "@/lib/business";
 
 const products = [
   {
-    title: "Fresh Meat",
-    img: "/imgs/products/1.png",
-    description: "Premium quality fresh meat for your favorite dishes.",
-  },
-  {
-    title: "Vegetables",
-    img: "/imgs/products/2.png",
-    description: "A wide selection of fresh vegetables to enhance your meals.",
-  },
-  {
     title: "Dairy Products",
     img: "/imgs/products/4.png",
     description: "Enjoy fresh milk, cheese, and yogurt every day.",
