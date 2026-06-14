@@ -26,7 +26,7 @@ export const formatPrice = (price: number) => {
 export function constructMetaData({
   title = "Anchal Hypermarket",
   description = "Anchal Hypermarket is your one-stop destination for fresh groceries, high-quality meats, daily essentials, and more. Experience a wide selection of products at competitive prices, with a commitment to providing the best shopping experience for our customers.",
-  image = "/thumbnail.png",
+  image = "/logo-og.png",
 }: {
   title?: string;
   description?: string;
@@ -47,7 +47,7 @@ export function constructMetaData({
       images: [image],
       creator: "@NabeelMS01",
     },
-    metadataBase: new URL("https://case-app-dev.vercel.app"),
+    metadataBase: new URL("https://anchalhypermarket.com"),
   };
 }
  
